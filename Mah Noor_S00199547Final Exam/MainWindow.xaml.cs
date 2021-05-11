@@ -21,6 +21,11 @@ namespace Mah_Noor_S00199547Final_Exam
 	public partial class MainWindow : Window
 	{
 		List<Game> AllGames;
+
+		public List<Game> Xbox { get; private set; }
+		public List<Game> PS { get; private set; }
+		public List<Game> Swith { get; private set; }
+
 		public MainWindow()
 		{
 			InitializeComponent();
@@ -30,8 +35,8 @@ namespace Mah_Noor_S00199547Final_Exam
 		{
 			GameData db = new GameData();//Database 
 
-			var query = from g in db.GamesInfo
-						select g;
+			var query = from Game in db.GamesInfo
+						select Game;
 			AllGames = query.ToList();
 			lbxGames.ItemsSource = AllGames;
 
@@ -44,8 +49,37 @@ namespace Mah_Noor_S00199547Final_Exam
 
 			if (selectedGame != null)
 			{
-                imagegane.Source = new BitmapImage(new Uri(selectedGame.Gameimage,UriKind.Relative ));
-			}tblkgames.Text = $"{selectedGame.Price:C}";
+				imagegane.Source = new BitmapImage(new Uri(selectedGame.Gameimage, UriKind.Relative));
+				tblkgames.Text = $"{selectedGame.Price:C},{selectedGame.Platfrom},{selectedGame.Description}";
+			}
+		}
+
+		private void rball_Checked(object sender, RoutedEventArgs e)
+		{
+			if (rball.IsChecked == true)
+			{
+				lbxGames.ItemsSource = AllGames; 
+			}
+			else
+			{
+				if (rbxbox.IsChecked== true)
+				{
+					AllGames = Xbox;
+				}
+				else if (rbps.IsChecked == true)
+				{
+					AllGames = PS;
+				}
+
+				else if (rbswitch.IsChecked== true)
+				{
+					AllGames = Swith;
+				}
+
+				lbxGames.ItemsSource = AllGames;
+
+
+			}
 
 		}
 	}
