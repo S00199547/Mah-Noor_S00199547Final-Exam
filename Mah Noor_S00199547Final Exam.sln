@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mah Noor_S00199547Final Exa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{009486DC-9FB9-4A99-B3A6-24A5E726A627}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMangemnet", "DataMangemnet\DataMangemnet.csproj", "{7DFF3751-C06E-4229-A5EB-3344867DE5A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{009486DC-9FB9-4A99-B3A6-24A5E726A627}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{009486DC-9FB9-4A99-B3A6-24A5E726A627}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{009486DC-9FB9-4A99-B3A6-24A5E726A627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DFF3751-C06E-4229-A5EB-3344867DE5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DFF3751-C06E-4229-A5EB-3344867DE5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DFF3751-C06E-4229-A5EB-3344867DE5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DFF3751-C06E-4229-A5EB-3344867DE5A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
