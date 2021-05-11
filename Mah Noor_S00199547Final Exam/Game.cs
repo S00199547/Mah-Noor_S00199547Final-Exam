@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace Mah_Noor_S00199547Final_Exam
 		{
 
 		}
-		public Game(string name, int metacriticScore,string description, string platform ,decimal price, string gameimage)
+		public Game(string name, int metacriticScore,string description, string platform ,decimal price, string gameimage = "")
 		{
 			Name = name;
 			MetacriticScore = metacriticScore;
@@ -42,6 +43,14 @@ namespace Mah_Noor_S00199547Final_Exam
 		}
 
 
+	}
+	public class GameData :DbContext
+	{
+		public GameData():base(@"C:\DATA3\GAMESINFO.MDF") {}
+
+			public DbSet<Game>GamesInfo { get; set; }
+
+			
 	}
 
 }

@@ -89,5 +89,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mah Noor_S00199547Final Exam\Mah Noor_S00199547Final Exam.csproj">
+      <Project>{31da5cc7-8076-47b9-814c-305b07929af6}</Project>
+      <Name>Mah Noor_S00199547Final Exam</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
