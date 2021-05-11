@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:Mah_Noor_S00199547Final_Exam"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Key="listboxTemplate">
+            <StackPanel Orientation="Horizontal">
+                
+                <TextBlock Margin="5" Text="{Binding Name}" VerticalAlignment="Center"/>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        
+        <ListBox ItemTemplate="{StaticResource ResourceKey=listboxTemplate}" x:Name="lbxGames" HorizontalAlignment="Left" Height="328" Margin="55,53,0,0" VerticalAlignment="Top" Width="264" SelectionChanged="lbxGames_SelectionChanged"/>
+        <Image x:Name="imagegane" HorizontalAlignment="Left" Height="190" Margin="430,169,0,0" VerticalAlignment="Top" Width="196"/>
+        <TextBlock x:Name="tblkgames" HorizontalAlignment="Left" Margin="455,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="112" RenderTransformOrigin="0.651,0.538"/>
+
     </Grid>
 </Window>
