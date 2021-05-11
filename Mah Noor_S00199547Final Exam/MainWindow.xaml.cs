@@ -37,8 +37,8 @@ namespace Mah_Noor_S00199547Final_Exam
 
 			var query = from Game in db.GamesInfo
 						select Game;
-			AllGames = query.ToList();
-			lbxGames.ItemsSource = AllGames;
+			
+			lbxGames.ItemsSource = query.ToList(); 
 
 		}
 

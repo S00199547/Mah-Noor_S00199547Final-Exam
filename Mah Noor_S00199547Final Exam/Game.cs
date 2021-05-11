@@ -40,7 +40,7 @@ namespace Mah_Noor_S00199547Final_Exam
 		//Calculation 
 		public void DecreasePrice(double decrease)
 		{
-			Price *= (decimal)(1 - decrease);
+			Price *= (decimal)(1 - decrease)+MetacriticScore;
 		}
 
 
