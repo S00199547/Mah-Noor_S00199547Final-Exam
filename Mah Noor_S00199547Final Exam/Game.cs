@@ -37,6 +37,7 @@ namespace Mah_Noor_S00199547Final_Exam
 		{
 			return Name;
 		}
+		//Calculation 
 		public void DecreasePrice(double decrease)
 		{
 			Price *= (decimal)(1 - decrease);
@@ -44,9 +45,10 @@ namespace Mah_Noor_S00199547Final_Exam
 
 
 	}
+	//Database
 	public class GameData :DbContext
 	{
-		public GameData():base(@"C:\DATA3\GAMESINFO.MDF") {}
+		public GameData():base(@"C:\DATA3\GAMESINFO.MDF") {}//Location of database 
 
 			public DbSet<Game>GamesInfo { get; set; }
 

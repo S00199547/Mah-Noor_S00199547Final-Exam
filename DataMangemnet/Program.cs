@@ -15,6 +15,7 @@ namespace DataMangemnet
 
 			using(db)
 			{
+				//Add Games Detail 
 				Game g1 = new Game("It Takes Two", 88,"PC, Xbox, PS, Switch", "/image/ittakes2.jpg",  69.99m, " From Hazelight comes It Takes Two an innovative co-op adventure where uniquely varied gameplay and emotional storytelling intertwine in a fantastical journey. Founded to push the creative boundaries of what's possible in games, Hazelight is the award-winning studio behind the critically acclaimed A Way Out and Brothers: A Tale of Two Sons.");
 				Game g2 = new Game("Miles Morales", 85, "PS", "/image/milesmorales.jpg", 79.99m, "The latest adventure in the Spider-Man universe builds on and expand Marvel’s Spider-Man through an all-new story. Players experience the rise of Miles Morales as he masters new powers to become his own Spider-Man. With PS5’s SSD, players can near-instantaneously fast-travel across Marvel’s New York City, or feel the tension of each one of Miles’s web-swings, punches, web shots, and venom blasts with the DualSense wireless controller’s haptic feedback. Highly-detailed character models and enhanced visuals across the game intensify the story of Miles Morales as he faces great, new challenges while learning to be his own Spider-Man.");
 				Game g3 = new Game("Halo 5", 84, "Xbox", "/image/halo.jpg", 59.99m, "Peace has been devastated as colony worlds are unexpectedly attacked. What's more, when humanity's greatest hero goes missing, a new Spartan is assigned the task of hunting the Master Chief and solving a mystery that threatens the whole of the galaxy.");
@@ -29,7 +30,7 @@ namespace DataMangemnet
 				db.GamesInfo.Add(g4);
 
 				Console.WriteLine("Adding to databse");
-
+				//Save in database 
 				db.SaveChanges();
 
 				Console.WriteLine("Saved to database");

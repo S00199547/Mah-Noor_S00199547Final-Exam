@@ -28,7 +28,7 @@ namespace Mah_Noor_S00199547Final_Exam
 
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
-			GameData db = new GameData();
+			GameData db = new GameData();//Database 
 
 			var query = from g in db.GamesInfo
 						select g;
@@ -37,7 +37,7 @@ namespace Mah_Noor_S00199547Final_Exam
 
 		}
 
-
+		//SElection change handler 
 		private void lbxGames_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			Game selectedGame = lbxGames.SelectedItem as Game;
