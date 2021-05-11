@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Mah_Noor_S00199547Final_Exam;
 
 namespace UnitTestProject1
 {
@@ -7,8 +8,17 @@ namespace UnitTestProject1
 	public class UnitTest1
 	{
 		[TestMethod]
-		public void TestMethod1()
+		public void TestPricedecrease()
+
 		{
+			//Arange
+
+
+			//Act
+
+
+			//Assert
+
 		}
 	}
 }
